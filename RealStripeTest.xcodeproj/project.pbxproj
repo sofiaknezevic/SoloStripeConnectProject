@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D3264D11E871AE90045B126 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D3264D01E871AE90045B126 /* View.xib */; };
+		5D890EFC1E847277008E7931 /* ChooseRecipientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D890EFB1E847277008E7931 /* ChooseRecipientViewController.swift */; };
+		5DCE991A1E85AE45008B5CED /* ConnectAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE99191E85AE45008B5CED /* ConnectAuthViewController.swift */; };
+		5DCE991C1E85BE18008B5CED /* PossibleServerStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE991B1E85BE18008B5CED /* PossibleServerStuff.swift */; };
+		5DCE991E1E85F117008B5CED /* MakingACharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE991D1E85F117008B5CED /* MakingACharge.swift */; };
+		5DDACDFF1E834BC800B499AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDACDFE1E834BC800B499AA /* AppDelegate.swift */; };
+		5DDACE011E834BC800B499AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDACE001E834BC800B499AA /* ViewController.swift */; };
+		5DDACE041E834BC800B499AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDACE021E834BC800B499AA /* Main.storyboard */; };
+		5DDACE061E834BC800B499AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DDACE051E834BC800B499AA /* Assets.xcassets */; };
+		5DDACE091E834BC800B499AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDACE071E834BC800B499AA /* LaunchScreen.storyboard */; };
+		5DDACE111E835A0500B499AA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDACE101E835A0500B499AA /* APIClient.swift */; };
+		5DDACE131E8360D400B499AA /* NetworkStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDACE121E8360D400B499AA /* NetworkStuff.swift */; };
+		AD0DC0A46497E3D38CD6AE27 /* Pods_RealStripeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A757ABA810A25EF8CF0FFC20 /* Pods_RealStripeTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A60673C1DA6C09F457A6BCF /* Pods-RealStripeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealStripeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealStripeTest/Pods-RealStripeTest.release.xcconfig"; sourceTree = "<group>"; };
+		5D3264D01E871AE90045B126 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		5D890EFB1E847277008E7931 /* ChooseRecipientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseRecipientViewController.swift; sourceTree = "<group>"; };
+		5DCE99191E85AE45008B5CED /* ConnectAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectAuthViewController.swift; sourceTree = "<group>"; };
+		5DCE991B1E85BE18008B5CED /* PossibleServerStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PossibleServerStuff.swift; sourceTree = "<group>"; };
+		5DCE991D1E85F117008B5CED /* MakingACharge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakingACharge.swift; sourceTree = "<group>"; };
+		5DDACDFB1E834BC800B499AA /* RealStripeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealStripeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DDACDFE1E834BC800B499AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DDACE001E834BC800B499AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DDACE031E834BC800B499AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DDACE051E834BC800B499AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DDACE081E834BC800B499AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DDACE0A1E834BC800B499AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DDACE101E835A0500B499AA /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5DDACE121E8360D400B499AA /* NetworkStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStuff.swift; sourceTree = "<group>"; };
+		A757ABA810A25EF8CF0FFC20 /* Pods_RealStripeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealStripeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55CE3AE278641D1BCA53FFD /* Pods-RealStripeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealStripeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealStripeTest/Pods-RealStripeTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DDACDF81E834BC800B499AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD0DC0A46497E3D38CD6AE27 /* Pods_RealStripeTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DDACDF21E834BC800B499AA = {
+			isa = PBXGroup;
+			children = (
+				5DDACDFD1E834BC800B499AA /* RealStripeTest */,
+				5DDACDFC1E834BC800B499AA /* Products */,
+				AEDAD1710D7D5EFCC66FAB8F /* Pods */,
+				F7D30178DFA9BCA210819227 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5DDACDFC1E834BC800B499AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DDACDFB1E834BC800B499AA /* RealStripeTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DDACDFD1E834BC800B499AA /* RealStripeTest */ = {
+			isa = PBXGroup;
+			children = (
+				5DDACDFE1E834BC800B499AA /* AppDelegate.swift */,
+				5DDACE101E835A0500B499AA /* APIClient.swift */,
+				5DCE991B1E85BE18008B5CED /* PossibleServerStuff.swift */,
+				5DDACE121E8360D400B499AA /* NetworkStuff.swift */,
+				5DCE991D1E85F117008B5CED /* MakingACharge.swift */,
+				5DDACE001E834BC800B499AA /* ViewController.swift */,
+				5D3264D01E871AE90045B126 /* View.xib */,
+				5D890EFB1E847277008E7931 /* ChooseRecipientViewController.swift */,
+				5DCE99191E85AE45008B5CED /* ConnectAuthViewController.swift */,
+				5DDACE021E834BC800B499AA /* Main.storyboard */,
+				5DDACE051E834BC800B499AA /* Assets.xcassets */,
+				5DDACE071E834BC800B499AA /* LaunchScreen.storyboard */,
+				5DDACE0A1E834BC800B499AA /* Info.plist */,
+			);
+			path = RealStripeTest;
+			sourceTree = "<group>";
+		};
+		AEDAD1710D7D5EFCC66FAB8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C55CE3AE278641D1BCA53FFD /* Pods-RealStripeTest.debug.xcconfig */,
+				5A60673C1DA6C09F457A6BCF /* Pods-RealStripeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7D30178DFA9BCA210819227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A757ABA810A25EF8CF0FFC20 /* Pods_RealStripeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DDACDFA1E834BC800B499AA /* RealStripeTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DDACE0D1E834BC800B499AA /* Build configuration list for PBXNativeTarget "RealStripeTest" */;
+			buildPhases = (
+				3B9505495B742BB13E0B20D9 /* [CP] Check Pods Manifest.lock */,
+				5DDACDF71E834BC800B499AA /* Sources */,
+				5DDACDF81E834BC800B499AA /* Frameworks */,
+				5DDACDF91E834BC800B499AA /* Resources */,
+				6AF29549747E93275C9A8069 /* [CP] Embed Pods Frameworks */,
+				5FC4E233789618B47C4CA04A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealStripeTest;
+			productName = RealStripeTest;
+			productReference = 5DDACDFB1E834BC800B499AA /* RealStripeTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DDACDF31E834BC800B499AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sofia Knezevic";
+				TargetAttributes = {
+					5DDACDFA1E834BC800B499AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SKGXTRK4EB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5DDACDF61E834BC800B499AA /* Build configuration list for PBXProject "RealStripeTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DDACDF21E834BC800B499AA;
+			productRefGroup = 5DDACDFC1E834BC800B499AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DDACDFA1E834BC800B499AA /* RealStripeTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DDACDF91E834BC800B499AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D3264D11E871AE90045B126 /* View.xib in Resources */,
+				5DDACE091E834BC800B499AA /* LaunchScreen.storyboard in Resources */,
+				5DDACE061E834BC800B499AA /* Assets.xcassets in Resources */,
+				5DDACE041E834BC800B499AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B9505495B742BB13E0B20D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC4E233789618B47C4CA04A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealStripeTest/Pods-RealStripeTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF29549747E93275C9A8069 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealStripeTest/Pods-RealStripeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DDACDF71E834BC800B499AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCE991E1E85F117008B5CED /* MakingACharge.swift in Sources */,
+				5DDACE011E834BC800B499AA /* ViewController.swift in Sources */,
+				5DCE991A1E85AE45008B5CED /* ConnectAuthViewController.swift in Sources */,
+				5DDACDFF1E834BC800B499AA /* AppDelegate.swift in Sources */,
+				5D890EFC1E847277008E7931 /* ChooseRecipientViewController.swift in Sources */,
+				5DCE991C1E85BE18008B5CED /* PossibleServerStuff.swift in Sources */,
+				5DDACE111E835A0500B499AA /* APIClient.swift in Sources */,
+				5DDACE131E8360D400B499AA /* NetworkStuff.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DDACE021E834BC800B499AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDACE031E834BC800B499AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DDACE071E834BC800B499AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DDACE081E834BC800B499AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DDACE0B1E834BC800B499AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DDACE0C1E834BC800B499AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DDACE0E1E834BC800B499AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C55CE3AE278641D1BCA53FFD /* Pods-RealStripeTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SKGXTRK4EB;
+				INFOPLIST_FILE = RealStripeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sofiaknezevic.RealStripeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5DDACE0F1E834BC800B499AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A60673C1DA6C09F457A6BCF /* Pods-RealStripeTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SKGXTRK4EB;
+				INFOPLIST_FILE = RealStripeTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sofiaknezevic.RealStripeTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DDACDF61E834BC800B499AA /* Build configuration list for PBXProject "RealStripeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDACE0B1E834BC800B499AA /* Debug */,
+				5DDACE0C1E834BC800B499AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DDACE0D1E834BC800B499AA /* Build configuration list for PBXNativeTarget "RealStripeTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DDACE0E1E834BC800B499AA /* Debug */,
+				5DDACE0F1E834BC800B499AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DDACDF31E834BC800B499AA /* Project object */;
+}

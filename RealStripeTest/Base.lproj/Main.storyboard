@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4o2-t6-nHb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="doq-xg-8Ru">
+            <objects>
+                <navigationController id="4o2-t6-nHb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Un2-oc-q3E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HJU-eV-CzI" kind="relationship" relationship="rootViewController" id="DId-kd-2Dv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W94-RO-W64" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1551" y="56"/>
+        </scene>
+        <!--Choose Recipient View Controller-->
+        <scene sceneID="2MY-GI-0R8">
+            <objects>
+                <viewController id="HJU-eV-CzI" customClass="ChooseRecipientViewController" customModule="RealStripeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iLR-Im-HeM"/>
+                        <viewControllerLayoutGuide type="bottom" id="DYA-wU-cuU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XdM-eT-tFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9np-PF-AV1">
+                                <rect key="frame" x="92" y="317" width="190" height="33"/>
+                                <state key="normal" image="light-on-light"/>
+                                <connections>
+                                    <action selector="connectWithStripe:" destination="HJU-eV-CzI" eventType="touchUpInside" id="Amh-dt-dxm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9np-PF-AV1" firstAttribute="centerX" secondItem="XdM-eT-tFZ" secondAttribute="centerX" id="uCL-Yt-Ias"/>
+                            <constraint firstItem="9np-PF-AV1" firstAttribute="centerY" secondItem="XdM-eT-tFZ" secondAttribute="centerY" id="zKT-bJ-yon"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ddH-p8-6SQ"/>
+                    <connections>
+                        <segue destination="2gh-YB-jMl" kind="presentation" identifier="showWebView" id="mkT-vG-vx0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAh-AC-wCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-738" y="57"/>
+        </scene>
+        <!--Connect Auth View Controller-->
+        <scene sceneID="4w2-gb-8pq">
+            <objects>
+                <viewController id="2gh-YB-jMl" customClass="ConnectAuthViewController" customModule="RealStripeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ZF-yH-cIN"/>
+                        <viewControllerLayoutGuide type="bottom" id="39f-xf-SBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XYA-sg-jOK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7OS-0h-PAL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2gh-YB-jMl" id="q3Z-xZ-I4a"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7OS-0h-PAL" secondAttribute="trailing" id="HjN-X6-V8x"/>
+                            <constraint firstItem="7OS-0h-PAL" firstAttribute="leading" secondItem="XYA-sg-jOK" secondAttribute="leading" id="LQ7-ZU-mkB"/>
+                            <constraint firstItem="7OS-0h-PAL" firstAttribute="top" secondItem="XYA-sg-jOK" secondAttribute="top" id="NIS-Nk-GBr"/>
+                            <constraint firstItem="39f-xf-SBl" firstAttribute="top" secondItem="7OS-0h-PAL" secondAttribute="bottom" id="jb5-Bd-bhZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stripeWebView" destination="7OS-0h-PAL" id="4Tf-9n-Ef4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWT-b5-Mqx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="light-on-light" width="190" height="33"/>
+    </resources>
+</document>
