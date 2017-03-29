@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RealStripeTest/APIClient.swift"
-            timestampString = "512174774.410841"
+            timestampString = "512502635.041944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "completeCharge(_:userData:amount:completion:)"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "retrieveCustomer(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RealStripeTest/APIClient.swift"
-            timestampString = "512177215.367883"
+            filePath = "RealStripeTest/ViewController.swift"
+            timestampString = "512502693.68001"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "selectDefaultCustomerSource(_:completion:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "didTapPay(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,46 +41,30 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RealStripeTest/APIClient.swift"
-            timestampString = "512177224.085165"
+            filePath = "Pods/Stripe/Stripe/STPPaymentContext.m"
+            timestampString = "512502765.578412"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "attachSource(toCustomer:completion:)"
+            startingLineNumber = "404"
+            endingLineNumber = "404"
+            landmarkName = "-requestPayment"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RealStripeTest.APIClient.attachSource (toCustomer : __ObjC.STPSourceProtocol, completion : (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "RealStripeTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sofiaknezevic/Desktop/lighthouse/RealStripeTest/RealStripeTest/APIClient.swift"
-                  timestampString = "512434365.294962"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "38">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RealStripeTest.APIClient.attachSource (toCustomer : __ObjC.STPSourceProtocol, completion : (Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "RealStripeTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sofiaknezevic/Desktop/lighthouse/RealStripeTest/RealStripeTest/APIClient.swift"
-                  timestampString = "512434365.296226"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "172">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/Stripe/Stripe/STPPaymentContext.m"
+            timestampString = "512502769.130297"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "503"
+            endingLineNumber = "503"
+            landmarkName = "-requestPayment"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
