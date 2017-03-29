@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0679BA1E8C336B00CE4939 /* AddSourceCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0679B91E8C336B00CE4939 /* AddSourceCardViewController.swift */; };
 		5D3264D11E871AE90045B126 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D3264D01E871AE90045B126 /* View.xib */; };
 		5D890EFC1E847277008E7931 /* ChooseRecipientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D890EFB1E847277008E7931 /* ChooseRecipientViewController.swift */; };
 		5DCE991A1E85AE45008B5CED /* ConnectAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE99191E85AE45008B5CED /* ConnectAuthViewController.swift */; };
 		5DCE991C1E85BE18008B5CED /* PossibleServerStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE991B1E85BE18008B5CED /* PossibleServerStuff.swift */; };
-		5DCE991E1E85F117008B5CED /* MakingACharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCE991D1E85F117008B5CED /* MakingACharge.swift */; };
 		5DDACDFF1E834BC800B499AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDACDFE1E834BC800B499AA /* AppDelegate.swift */; };
 		5DDACE011E834BC800B499AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDACE001E834BC800B499AA /* ViewController.swift */; };
 		5DDACE041E834BC800B499AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DDACE021E834BC800B499AA /* Main.storyboard */; };
@@ -24,11 +24,11 @@
 
 /* Begin PBXFileReference section */
 		5A60673C1DA6C09F457A6BCF /* Pods-RealStripeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealStripeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealStripeTest/Pods-RealStripeTest.release.xcconfig"; sourceTree = "<group>"; };
+		5D0679B91E8C336B00CE4939 /* AddSourceCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSourceCardViewController.swift; sourceTree = "<group>"; };
 		5D3264D01E871AE90045B126 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		5D890EFB1E847277008E7931 /* ChooseRecipientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseRecipientViewController.swift; sourceTree = "<group>"; };
 		5DCE99191E85AE45008B5CED /* ConnectAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectAuthViewController.swift; sourceTree = "<group>"; };
 		5DCE991B1E85BE18008B5CED /* PossibleServerStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PossibleServerStuff.swift; sourceTree = "<group>"; };
-		5DCE991D1E85F117008B5CED /* MakingACharge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakingACharge.swift; sourceTree = "<group>"; };
 		5DDACDFB1E834BC800B499AA /* RealStripeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealStripeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DDACDFE1E834BC800B499AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DDACE001E834BC800B499AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 				5DDACE101E835A0500B499AA /* APIClient.swift */,
 				5DCE991B1E85BE18008B5CED /* PossibleServerStuff.swift */,
 				5DDACE121E8360D400B499AA /* NetworkStuff.swift */,
-				5DCE991D1E85F117008B5CED /* MakingACharge.swift */,
+				5D0679B91E8C336B00CE4939 /* AddSourceCardViewController.swift */,
 				5DDACE001E834BC800B499AA /* ViewController.swift */,
 				5D3264D01E871AE90045B126 /* View.xib */,
 				5D890EFB1E847277008E7931 /* ChooseRecipientViewController.swift */,
@@ -234,12 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCE991E1E85F117008B5CED /* MakingACharge.swift in Sources */,
 				5DDACE011E834BC800B499AA /* ViewController.swift in Sources */,
 				5DCE991A1E85AE45008B5CED /* ConnectAuthViewController.swift in Sources */,
 				5DDACDFF1E834BC800B499AA /* AppDelegate.swift in Sources */,
 				5D890EFC1E847277008E7931 /* ChooseRecipientViewController.swift in Sources */,
 				5DCE991C1E85BE18008B5CED /* PossibleServerStuff.swift in Sources */,
+				5D0679BA1E8C336B00CE4939 /* AddSourceCardViewController.swift in Sources */,
 				5DDACE111E835A0500B499AA /* APIClient.swift in Sources */,
 				5DDACE131E8360D400B499AA /* NetworkStuff.swift in Sources */,
 			);
