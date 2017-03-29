@@ -83,17 +83,18 @@ class ViewController: UIViewController, STPPaymentContextDelegate {
 
     }
 
-
     @IBAction func didTapPay(_ sender: UIButton) {
         
         
-        self.paymentContext.requestPayment()
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let newVC = storyBoard.instantiateViewController(withIdentifier: "AddSourceCardViewController") as! AddSourceCardViewController
+        
+        newVC.connectedAccountJSON = self.jsonOfUser
+        
+        self.present(newVC, animated: true, completion: nil)
+        
     }
 
-
- 
-
-    
     func paymentContext(_ paymentContext: STPPaymentContext, didCreatePaymentResult paymentResult: STPPaymentResult, completion: @escaping STPErrorBlock) {
         
         APIClient.sharedClient.completeCharge(paymentResult, userData:self.jsonOfUser!, amount: self.paymentContext.paymentAmount, completion: completion)
